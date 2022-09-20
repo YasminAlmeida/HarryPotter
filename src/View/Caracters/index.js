@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { axiosInstance } from '../../Services.js';
 import * as S from './style.js';
+
 export default function Caracters() {
   const [data, setData] = useState([]);
 
@@ -18,7 +19,6 @@ export default function Caracters() {
     const newData = data.filter((item) => item.name.includes(input));
     setData(newData);
   };
-
   return (
     <S.BodyCaracters>
       <S.Search>
@@ -44,9 +44,8 @@ export default function Caracters() {
             <S.ListCaracters key={index}>
               <S.PicturesCaracters src={item.image} alt="caracter Pictures" />{' '}
               <S.NameCaracter>{item.name}</S.NameCaracter>
-              {/* <p>{item.house}</p> */}
             </S.ListCaracters>
-          ))}
+          ))}{' '}
       </S.ContainerCaracters>
     </S.BodyCaracters>
   );

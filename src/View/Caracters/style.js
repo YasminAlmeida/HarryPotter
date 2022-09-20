@@ -51,7 +51,7 @@ export const Input = styled.input`
   background-color: transparent;
   border: none;
   width: 500px;
-  color: #e8eaed;
+  color: #000;
   word-wrap: break-word;
   outline: none;
   display: flex;

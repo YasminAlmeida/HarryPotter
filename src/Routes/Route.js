@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../View/Home/index.js';
 import Caracters from '../View/Caracters/index.js';
 import Header from '../Component/Header/index.js';
-
 export default function Router() {
   return (
     <BrowserRouter>
